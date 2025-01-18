@@ -78,7 +78,7 @@ button {
 
 /* About Section */
 .about {
-    margin: 10px;
+    margin: auto;
     text-align: center;
     margin-top: 10px;
     padding: 50px 340px;
@@ -120,7 +120,7 @@ button {
 
 /* Portfolio Section */
 .portfolio {
-    margin: 10px;
+    margin: auto;
     text-align: center;
     margin-top: 10px;
     padding: 50px 340px;
