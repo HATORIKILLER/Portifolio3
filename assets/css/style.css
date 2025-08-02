@@ -27,6 +27,12 @@ button {
     font-size: 16px;
 }
 
+button:hover {
+background-color: #ffffff;
+color: #0a0a0a;
+transition: 0.9s ;
+}
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -150,25 +156,63 @@ button {
 }
 
 /* Contact Section */
-.contact {
-    padding: 50px 0;
-    background-color: #0a0a0a;
-    text-align: center;
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-size: 28px;  
 }
 
-#contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 500px;
-    margin: 0 auto;
+/* Inputs e textarea */
+.form-control {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  background: #2a2a2a;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s ease;
 }
 
-#contact-form input, #contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+.form-control:focus {
+  border-color: #073ed6;
+  outline: none;
+  box-shadow: 0 0 5px #073ed6;
+}
+
+/* Layout das colunas */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.col {
+  flex: 1;
+  min-width: 100px;
+}
+
+/* Botão */
+.btn {
+width: 100%;
+  padding: 14px;
+  background-color: #073ed6;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+cursor: pointer;
+transition: background 0.9s ease;
+}
+
+.btn:hover {
+background-color: #ffffff;
+color: #0a0a0a;
+transition: 0.9s ;
 }
 
 /* Footer */
