@@ -224,6 +224,7 @@ transition: 0.9s ;
 
 /* Services Section */
 .services {
+    margin: auto;
     padding: 50px 350px;
     border-radius: 20px;
     margin-bottom: 30px;
@@ -254,23 +255,25 @@ transition: 0.9s ;
     margin: auto;
     text-align: center;
     margin-top: 10px;
-    padding: 50px 300px;
+    padding: 50px 40px;
     border-radius: 20px;
     margin-bottom: 30px;
-    display:flex;
+    background-color: #1a1a1a;
 }
 
 .cert-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 20px;
+    justify-items: center;
+    margin-top: 30px;
 }
 
 .cert-grid a {
-    text-align: center;
-    width: 180px;
     text-decoration: none;
     color: #ffffff;
+    width: 100%;
+    max-width: 180px;
 }
 
 .cert-grid img {
@@ -283,7 +286,7 @@ transition: 0.9s ;
 
 .cert-grid img:hover {
     transform: scale(1.05);
-}   
+}
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
@@ -366,20 +369,50 @@ transition: 0.9s ;
         grid-template-columns: 1fr;
     }
 
-    .stats {
+    .services {
         flex-direction: column;
         align-items: center;
     }
 
-    .stats div {
+    .services container div {
         margin-bottom: 10px;
+        flex-direction: column;
+        align-items: center; 
     }
 
-    .contact form {
-        width: 90%;
+.cert-grid img {
+        flex-direction: column;
+        align-items: center;    
+        max-width: 150px;
+        margin-bottom: 20px;
     }
+
+.contact form {
+    width: 90%;
+}
 
     .footer {
         padding: 10px;
     }
+
+    .form-row {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.col {  
+    width: 90%;
+}
+
+.form-group {
+    font-size: 16px;
+    padding: 12px;
+}
+
+.about,
+.portfolio,
+.services,
+.certificates {
+    padding: 30px 20px;
+}
 }
